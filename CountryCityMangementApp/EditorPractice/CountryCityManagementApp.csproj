@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6A0055F-8363-4FCC-9958-7138D9B00AAE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EditorPractice</RootNamespace>
+    <AssemblyName>EditorPractice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=16.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Mustak\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
+    <Content Include="Content\DataTables\css\autoFill.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.dataTables.css" />
+    <Content Include="Content\DataTables\css\autoFill.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.foundation.css" />
+    <Content Include="Content\DataTables\css\autoFill.foundation.min.css" />
+    <Content Include="Content\DataTables\css\autoFill.jqueryui.css" />
+    <Content Include="Content\DataTables\css\autoFill.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\buttons.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\buttons.dataTables.css" />
+    <Content Include="Content\DataTables\css\buttons.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\buttons.foundation.css" />
+    <Content Include="Content\DataTables\css\buttons.foundation.min.css" />
+    <Content Include="Content\DataTables\css\buttons.jqueryui.css" />
+    <Content Include="Content\DataTables\css\buttons.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.bootstrap.css" />
+    <Content Include="Content\DataTables\css\colReorder.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.dataTables.css" />
+    <Content Include="Content\DataTables\css\colReorder.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.foundation.css" />
+    <Content Include="Content\DataTables\css\colReorder.foundation.min.css" />
+    <Content Include="Content\DataTables\css\colReorder.jqueryui.css" />
+    <Content Include="Content\DataTables\css\colReorder.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap4.css" />
+    <Content Include="Content\DataTables\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.foundation.css" />
+    <Content Include="Content\DataTables\css\dataTables.foundation.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.jqueryui.css" />
+    <Content Include="Content\DataTables\css\dataTables.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.material.css" />
+    <Content Include="Content\DataTables\css\dataTables.material.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.semanticui.css" />
+    <Content Include="Content\DataTables\css\dataTables.semanticui.min.css" />
+    <Content Include="Content\DataTables\css\dataTables.uikit.css" />
+    <Content Include="Content\DataTables\css\dataTables.uikit.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.bootstrap.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.dataTables.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.foundation.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.foundation.min.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.jqueryui.css" />
+    <Content Include="Content\DataTables\css\fixedColumns.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.bootstrap.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.dataTables.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.foundation.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.foundation.min.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.jqueryui.css" />
+    <Content Include="Content\DataTables\css\fixedHeader.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Content\DataTables\css\keyTable.bootstrap.css" />
+    <Content Include="Content\DataTables\css\keyTable.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.dataTables.css" />
+    <Content Include="Content\DataTables\css\keyTable.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.foundation.css" />
+    <Content Include="Content\DataTables\css\keyTable.foundation.min.css" />
+    <Content Include="Content\DataTables\css\keyTable.jqueryui.css" />
+    <Content Include="Content\DataTables\css\keyTable.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\responsive.bootstrap.css" />
+    <Content Include="Content\DataTables\css\responsive.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\responsive.dataTables.css" />
+    <Content Include="Content\DataTables\css\responsive.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\responsive.foundation.css" />
+    <Content Include="Content\DataTables\css\responsive.foundation.min.css" />
+    <Content Include="Content\DataTables\css\responsive.jqueryui.css" />
+    <Content Include="Content\DataTables\css\responsive.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.bootstrap.css" />
+    <Content Include="Content\DataTables\css\rowReorder.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.dataTables.css" />
+    <Content Include="Content\DataTables\css\rowReorder.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.foundation.css" />
+    <Content Include="Content\DataTables\css\rowReorder.foundation.min.css" />
+    <Content Include="Content\DataTables\css\rowReorder.jqueryui.css" />
+    <Content Include="Content\DataTables\css\rowReorder.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\scroller.bootstrap.css" />
+    <Content Include="Content\DataTables\css\scroller.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\scroller.dataTables.css" />
+    <Content Include="Content\DataTables\css\scroller.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\scroller.foundation.css" />
+    <Content Include="Content\DataTables\css\scroller.foundation.min.css" />
+    <Content Include="Content\DataTables\css\scroller.jqueryui.css" />
+    <Content Include="Content\DataTables\css\scroller.jqueryui.min.css" />
+    <Content Include="Content\DataTables\css\select.bootstrap.css" />
+    <Content Include="Content\DataTables\css\select.bootstrap.min.css" />
+    <Content Include="Content\DataTables\css\select.dataTables.css" />
+    <Content Include="Content\DataTables\css\select.dataTables.min.css" />
+    <Content Include="Content\DataTables\css\select.foundation.css" />
+    <Content Include="Content\DataTables\css\select.foundation.min.css" />
+    <Content Include="Content\DataTables\css\select.jqueryui.css" />
+    <Content Include="Content\DataTables\css\select.jqueryui.min.css" />
+    <Content Include="Content\DataTables\images\details_close.png" />
+    <Content Include="Content\DataTables\images\details_open.png" />
+    <Content Include="Content\DataTables\images\sort_asc.png" />
+    <Content Include="Content\DataTables\images\sort_asc_disabled.png" />
+    <Content Include="Content\DataTables\images\sort_both.png" />
+    <Content Include="Content\DataTables\images\sort_desc.png" />
+    <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
+    <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="froala_editor_1.2.7\js\plugins\media_manager.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
+    <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.foundation.js" />
+    <Content Include="Scripts\DataTables\autoFill.foundation.min.js" />
+    <Content Include="Scripts\DataTables\autoFill.jqueryui.js" />
+    <Content Include="Scripts\DataTables\autoFill.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap4.js" />
+    <Content Include="Scripts\DataTables\buttons.bootstrap4.min.js" />
+    <Content Include="Scripts\DataTables\buttons.colVis.js" />
+    <Content Include="Scripts\DataTables\buttons.colVis.min.js" />
+    <Content Include="Scripts\DataTables\buttons.flash.js" />
+    <Content Include="Scripts\DataTables\buttons.flash.min.js" />
+    <Content Include="Scripts\DataTables\buttons.foundation.js" />
+    <Content Include="Scripts\DataTables\buttons.foundation.min.js" />
+    <Content Include="Scripts\DataTables\buttons.html5.js" />
+    <Content Include="Scripts\DataTables\buttons.html5.min.js" />
+    <Content Include="Scripts\DataTables\buttons.jqueryui.js" />
+    <Content Include="Scripts\DataTables\buttons.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\buttons.print.js" />
+    <Content Include="Scripts\DataTables\buttons.print.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.autoFill.js" />
+    <Content Include="Scripts\DataTables\dataTables.autoFill.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap4.js" />
+    <Content Include="Scripts\DataTables\dataTables.bootstrap4.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.buttons.js" />
+    <Content Include="Scripts\DataTables\dataTables.buttons.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.colReorder.js" />
+    <Content Include="Scripts\DataTables\dataTables.colReorder.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedColumns.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedColumns.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedHeader.js" />
+    <Content Include="Scripts\DataTables\dataTables.fixedHeader.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.foundation.js" />
+    <Content Include="Scripts\DataTables\dataTables.foundation.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.jqueryui.js" />
+    <Content Include="Scripts\DataTables\dataTables.jqueryui.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.keyTable.js" />
+    <Content Include="Scripts\DataTables\dataTables.keyTable.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.material.js" />
+    <Content Include="Scripts\DataTables\dataTables.material.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.responsive.js" />
+    <Content Include="Scripts\DataTables\dataTables.responsive.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.rowReorder.js" />
+    <Content Include="Scripts\DataTables\dataTables.rowReorder.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.scroller.js" />
+    <Content Include="Scripts\DataTables\dataTables.scroller.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.select.js" />
+    <Content Include="Scripts\DataTables\dataTables.select.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.semanticui.js" />
+    <Content Include="Scripts\DataTables\dataTables.semanticui.min.js" />
+    <Content Include="Scripts\DataTables\dataTables.uikit.js" />
+    <Content Include="Scripts\DataTables\dataTables.uikit.min.js" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.js" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.min.js" />
+    <Content Include="Scripts\DataTables\responsive.bootstrap.js" />
+    <Content Include="Scripts\DataTables\responsive.bootstrap.min.js" />
+    <Content Include="Scripts\DataTables\responsive.foundation.js" />
+    <Content Include="Scripts\DataTables\responsive.foundation.min.js" />
+    <Content Include="Scripts\DataTables\responsive.jqueryui.js" />
+    <Content Include="Scripts\DataTables\responsive.jqueryui.min.js" />
+    <Content Include="UI\Index.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="UI\CityAddUI.aspx" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="froala_editor_1.2.7\css\froala_content.css" />
+    <Content Include="froala_editor_1.2.7\css\froala_content.min.css" />
+    <Content Include="froala_editor_1.2.7\css\froala_editor.css" />
+    <Content Include="froala_editor_1.2.7\css\froala_editor.min.css" />
+    <Content Include="froala_editor_1.2.7\css\froala_style.css" />
+    <Content Include="froala_editor_1.2.7\css\froala_style.min.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\dark.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\dark.min.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\gray.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\gray.min.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\red.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\red.min.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\royal.css" />
+    <Content Include="froala_editor_1.2.7\css\themes\royal.min.css" />
+    <Content Include="froala_editor_1.2.7\examples\always_blank.html" />
+    <Content Include="froala_editor_1.2.7\examples\always_visible.html" />
+    <Content Include="froala_editor_1.2.7\examples\basic.html" />
+    <Content Include="froala_editor_1.2.7\examples\block_tags.html" />
+    <Content Include="froala_editor_1.2.7\examples\characters_counter.html" />
+    <Content Include="froala_editor_1.2.7\examples\code_preview.html" />
+    <Content Include="froala_editor_1.2.7\examples\customize_button_icons.html" />
+    <Content Include="froala_editor_1.2.7\examples\custom_block_styles.html" />
+    <Content Include="froala_editor_1.2.7\examples\custom_buttons.html" />
+    <Content Include="froala_editor_1.2.7\examples\custom_dropdown.html" />
+    <Content Include="froala_editor_1.2.7\examples\custom_image_buttons.html" />
+    <Content Include="froala_editor_1.2.7\examples\default_tag.html" />
+    <Content Include="froala_editor_1.2.7\examples\direction_basic_mode.html" />
+    <Content Include="froala_editor_1.2.7\examples\direction_inline_mode.html" />
+    <Content Include="froala_editor_1.2.7\examples\disable_button.html" />
+    <Content Include="froala_editor_1.2.7\examples\empty.html" />
+    <Content Include="froala_editor_1.2.7\examples\enter_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\blur.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\blur_and_focus.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\contentChanged.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\focus.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\focus_text.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\getHTML.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\imageResize.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\onPaste.html" />
+    <Content Include="froala_editor_1.2.7\examples\events\removeImage.html" />
+    <Content Include="froala_editor_1.2.7\examples\file_upload.html" />
+    <Content Include="froala_editor_1.2.7\examples\focus_on_editor.html" />
+    <Content Include="froala_editor_1.2.7\examples\font_family.html" />
+    <Content Include="froala_editor_1.2.7\examples\fullscreen.html" />
+    <Content Include="froala_editor_1.2.7\examples\height.html" />
+    <Content Include="froala_editor_1.2.7\examples\icons.html" />
+    <Content Include="froala_editor_1.2.7\examples\iframe\content.html" />
+    <Content Include="froala_editor_1.2.7\examples\iframe\index.html" />
+    <Content Include="froala_editor_1.2.7\examples\image_buttons.html" />
+    <Content Include="froala_editor_1.2.7\examples\image_link_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\image_upload_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_destroy.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_button.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_click.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_image.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_image_with_link.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_link.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_link_unlink_button_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_on_link_with_link_text.html" />
+    <Content Include="froala_editor_1.2.7\examples\init_without_image_and_link.html" />
+    <Content Include="froala_editor_1.2.7\examples\inline.html" />
+    <Content Include="froala_editor_1.2.7\examples\inline_styles.html" />
+    <Content Include="froala_editor_1.2.7\examples\inline_with_no_buttons.html" />
+    <Content Include="froala_editor_1.2.7\examples\language.html" />
+    <Content Include="froala_editor_1.2.7\examples\link_attributes.html" />
+    <Content Include="froala_editor_1.2.7\examples\link_classes.html" />
+    <Content Include="froala_editor_1.2.7\examples\link_text.html" />
+    <Content Include="froala_editor_1.2.7\examples\live_preview.html" />
+    <Content Include="froala_editor_1.2.7\examples\media_manager_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\min_height.html" />
+    <Content Include="froala_editor_1.2.7\examples\paragraphy_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\plain_paste.html" />
+    <Content Include="froala_editor_1.2.7\examples\predefined_link_list.html" />
+    <Content Include="froala_editor_1.2.7\examples\require_js\index.html" />
+    <Content Include="froala_editor_1.2.7\examples\require_js\js\app.js" />
+    <Content Include="froala_editor_1.2.7\examples\require_js\js\lib\require.js" />
+    <Content Include="froala_editor_1.2.7\examples\scrollable_container.html" />
+    <Content Include="froala_editor_1.2.7\examples\shortcuts_available.html" />
+    <Content Include="froala_editor_1.2.7\examples\simple_ampersand.html" />
+    <Content Include="froala_editor_1.2.7\examples\table.html" />
+    <Content Include="froala_editor_1.2.7\examples\tabSpaces_disabled.html" />
+    <Content Include="froala_editor_1.2.7\examples\textarea.html" />
+    <Content Include="froala_editor_1.2.7\examples\text_near_image.html" />
+    <Content Include="froala_editor_1.2.7\examples\themes\dark_theme.html" />
+    <Content Include="froala_editor_1.2.7\examples\themes\gray_theme.html" />
+    <Content Include="froala_editor_1.2.7\examples\themes\red_theme.html" />
+    <Content Include="froala_editor_1.2.7\examples\themes\royal_theme.html" />
+    <Content Include="froala_editor_1.2.7\examples\toolbar_customization.html" />
+    <Content Include="froala_editor_1.2.7\examples\toolbar_fixed.html" />
+    <Content Include="froala_editor_1.2.7\examples\two_editors.html" />
+    <Content Include="froala_editor_1.2.7\examples\upload_pasted_images.html" />
+    <Content Include="froala_editor_1.2.7\img\photo1.jpg" />
+    <Content Include="froala_editor_1.2.7\js\froala_editor.min.js" />
+    <Content Include="froala_editor_1.2.7\js\froala_editor_ie8.min.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\ar.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\bs.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\cs.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\da.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\de.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\en_ca.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\en_gb.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\en_us.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\es.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\et.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\fa.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\fi.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\fr.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\he.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\hr.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\hu.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\id.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\it.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\ja.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\ko.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\me.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\nb.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\nl.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\pl.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\pt_br.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\pt_pt.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\ro.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\ru.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\sr.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\sv.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\th.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\tr.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\uk.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\zh_cn.js" />
+    <Content Include="froala_editor_1.2.7\js\langs\zh_tw.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\block_styles.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\char_counter.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\colors.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\entities.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\file_upload.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\font_family.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\font_size.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\fullscreen.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\inline_styles.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\lists.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\tables.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\urls.min.js" />
+    <Content Include="froala_editor_1.2.7\js\plugins\video.min.js" />
+    <Content Include="froala_editor_1.2.7\README.txt" />
+    <Content Include="packages.config" />
+    <Content Include="froala_editor_1.2.7\package.json" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\DataTables\css\mixins.scss" />
+    <Content Include="Content\DataTables\css\common.scss" />
+    <None Include="Scripts\jquery-2.2.2.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.2.js" />
+    <Content Include="Scripts\jquery-2.2.2.min.js" />
+    <Content Include="Scripts\jquery-2.2.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\style.css" />
+    <Content Include="UI\CountryAddUI.aspx" />
+    <Content Include="UI\ViewCities.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\CityGateway.cs" />
+    <Compile Include="Model\EntryCityViewModel.cs" />
+    <Compile Include="Model\ViewCitiesViewModel.cs" />
+    <Compile Include="UI\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MLL\CityManager.cs" />
+    <Compile Include="Model\City.cs" />
+    <Compile Include="UI\CityAddUI.aspx.cs">
+      <DependentUpon>CityAddUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CityAddUI.aspx.designer.cs">
+      <DependentUpon>CityAddUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CountryGateway.cs" />
+    <Compile Include="MLL\CountryManager.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="UI\CountryAddUI.aspx.cs">
+      <DependentUpon>CountryAddUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CountryAddUI.aspx.designer.cs">
+      <DependentUpon>CountryAddUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ViewCities.aspx.cs">
+      <DependentUpon>ViewCities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCities.aspx.designer.cs">
+      <DependentUpon>ViewCities.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2483</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2483/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

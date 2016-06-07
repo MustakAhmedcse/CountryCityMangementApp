@@ -1,0 +1,7 @@
+E:\New folder\EditorPractice\EditorPractice\bin\EditorPractice.dll.config
+E:\New folder\EditorPractice\EditorPractice\bin\EditorPractice.dll
+E:\New folder\EditorPractice\EditorPractice\bin\EditorPractice.pdb
+E:\New folder\EditorPractice\EditorPractice\bin\AjaxControlToolkit.dll
+E:\New folder\EditorPractice\EditorPractice\obj\Debug\EditorPractice.csprojResolveAssemblyReference.cache
+E:\New folder\EditorPractice\EditorPractice\obj\Debug\EditorPractice.dll
+E:\New folder\EditorPractice\EditorPractice\obj\Debug\EditorPractice.pdb
